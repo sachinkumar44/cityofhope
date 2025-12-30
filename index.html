@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Hope - Expert Cancer Care</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	
+	<style>
+
+
+	</style>
+</head>
+<body>
+    <!-- Top Header Bar -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-links">
+                <a href="#"><i class="fas fa-phone"></i> (833) 657-0019</a>
+                <a href="careers.html"><i class="fas fa-briefcase"></i> Careers</a>
+                <a href="locations.html"><i class="fas fa-map-marker-alt"></i> Locations</a>
+                <a href="mycityofhope.html"><i class="fas fa-user"></i> MyCityofHope Login</a>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#" class="btn-donate">
+                    <i class="fas fa-heart"></i> Donate
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Nav -->
+<nav class="main-nav">
+    <div class="container">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="180" height="50" viewBox="0 0 180 50">
+                    <rect x="0" y="10" width="30" height="30" fill="#006eb5" rx="3"/>
+                    <path d="M 8 20 L 22 20 M 15 13 L 15 27 M 8 27 L 22 27" stroke="white" stroke-width="2" fill="none"/>
+                    <text x="38" y="28" font-family="Arial" font-size="16" fill="#006eb5" font-weight="400">City of Hope</text>
+                    <text x="38" y="38" font-family="Arial" font-size="8" fill="#999">®</text>
+                </svg>
+            </a>
+
+            <!-- Mobile Icons (Phone, Search, Hamburger) -->
+            <div class="mobile-icons">
+                <a href="#" class="mobile-icon phone-icon">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <button class="mobile-icon search-icon">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu-wrapper" id="navMenu">
+                <!-- Mobile Menu Header (Clickable to go home) -->
+                <div class="mobile-menu-header" id="mainMenuHeader">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>Main Menu</span>
+                </div>
+
+                <!-- Home Link (No Dropdown) -->
+                <div class="nav-item-simple">
+                    <a href="#" class="nav-link-simple">Home</a>
+                </div>
+
+                <!-- Patient Care -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        Patient Care <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu-simple">
+                        <div class="dropdown-content">
+                            <div class="dropdown-row">
+                                <div class="dropdown-column">
+                                    <h4 class="dropdown-title">For Patients & Caregivers</h4>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Becoming a Patient</a></li>
+                                        <li><a href="#">Cancers & Conditions</a></li>
+                                        <li><a href="#">Life During Treatment</a></li>
+                                        <li><a href="#">Find a Doctor</a></li>
+                                        <li><a href="locations.html">Find a Location</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h4 class="dropdown-title">For Physicians</h4>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Refer a Patient</a></li>
+                                        <li><a href="#">Clinical Programs</a></li>
+                                        <li><a href="#">Clinical Trials</a></li>
+                                        <li><a href="#">Clinical Faculty</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research & Innovation -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        Research & Innovation <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu-simple">
+                        <div class="dropdown-content">
+                            <div class="dropdown-row">
+                                <div class="dropdown-column">
+                                    <h4 class="dropdown-title">Research at City of Hope</h4>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Beckman Research Institute</a></li>
+                                        <li><a href="#">Arthur Riggs Diabetes & Metabolism Research Institute</a></li>
+                                        <li><a href="#">Comprehensive Cancer Center</a></li>
+                                        <li><a href="#">Hematologic Malignancies Research Institute</a></li>
+                                        <li><a href="#">Translational Genomics Research Institute</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academics & Training -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        Academics & Training <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu-simple">
+                        <div class="dropdown-content">
+                            <div class="dropdown-row">
+                                <div class="dropdown-column">
+                                    <h4 class="dropdown-title">Academics & Training Overview</h4>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Irell & Manella Graduate School of Biological Sciences</a></li>
+                                        <li><a href="#">Graduate Medical Education</a></li>
+                                        <li><a href="#">Continuing Medical Education</a></li>
+                                        <li><a href="#">Health Professional Education</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Giving -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        Giving <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu-simple">
+                        <div class="dropdown-content">
+                            <div class="dropdown-row">
+                                <div class="dropdown-column">
+                                    <h4 class="dropdown-title">Ways to Give</h4>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Give Now</a></li>
+                                        <li><a href="#">Give in Honor/in Memory</a></li>
+                                        <li><a href="#">Planned Giving</a></li>
+                                        <li><a href="#">Corporate Philanthropy</a></li>
+                                        <li><a href="#">Philanthropic Priorities</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h4 class="dropdown-title">Volunteer Opportunities</h4>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Volunteer Requirements</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About -->
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        About <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu-simple">
+                        <div class="dropdown-content">
+                            <div class="dropdown-row">
+                                <div class="dropdown-column">
+                                    <h4 class="dropdown-title">Who We Are</h4>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Why City of Hope</a></li>
+                                        <li><a href="#">Leadership</a></li>
+                                        <li><a href="#">Our Values</a></li>
+                                        <li><a href="#">Donor Stories</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h4 class="dropdown-title">Newsroom</h4>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Stories of Hope</a></li>
+                                        <li><a href="#">Press Releases</a></li>
+                                        <li><a href="#">Media Experts</a></li>
+                                        <li><a href="#">Media Library</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Bottom Section -->
+                <div class="mobile-bottom-section">
+                    <a href="#" class="mobile-bottom-link phone-link">
+                        <i class="fas fa-phone"></i>
+                        <span>(833) 692-0701</span>
+                    </a>
+                    <a href="careers.html" class="mobile-bottom-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                    <a href="locations.html" class="mobile-bottom-link">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Locations</span>
+                    </a>
+                    <a href="mycityofhope.html" class="mobile-bottom-link">
+    <i class="fas fa-user"></i>
+    <span><em>My</em>CityofHope Login</span>
+</a>
+                    <button class="btn-donate-mobile">
+                        <i class="fas fa-heart"></i> Donate
+                    </button>
+                </div>
+
+                <button class="btn-schedule">Request Appointment</button>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Expert Cancer Care:<br>Our Legacy, Our Mission</h1>
+                <p class="subtitle">RECOGNIZED LEADERS IN PERSONALIZED TREATMENTS</p>
+                <button class="btn-appointment">
+                    Call for an appointment
+                    <small>(833) 657-0019</small>
+                </button>
+            </div>
+        </div>
+        
+        <div class="badge-container">
+            <div class="best-hospitals-badge">
+                <div class="badge-title">Best</div>
+                <div class="badge-title">Hospitals</div>
+                <div class="badge-logo">U.S.News</div>
+                <div style="font-size: 10px; font-weight: 700; color: #1a1a1a;">CANCER</div>
+                <div class="badge-year">2024-2025</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="description-section">
+        <div class="container">
+            <p>
+                City of Hope<sup>®</sup>, one of the largest and most advanced cancer research and treatment organizations in the United States, with a 100+ year legacy of discovery and innovation, is a leader in bone marrow transplantation, immunotherapy such as CAR T cell therapy, precision medicine and supportive care. Located just northeast of Los Angeles in Duarte, California, City of Hope's multidisciplinary team of world-class cancer experts offers superior care for adults and children with cancer and diabetes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Additional Info Text -->
+    <section class="info-text-section">
+        <div class="container">
+            <p style="color: #888; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+                As a National Cancer Institute-designated comprehensive cancer center, City of Hope is recognized for conducting cutting-edge research. City of Hope is currently ranked among the nation's top five cancer hospitals by U.S. News & World Report, and it has been included in U.S. News & World Report's prestigious Best Hospitals Honor Roll for four consecutive years — one of only 20 hospitals nationwide to achieve such rankings.
+            </p>
+            <p style="color: #666; font-size: 17px; line-height: 1.9; margin-bottom: 15px;">
+                We bring breakthroughs from the laboratory to our patients with lifesaving speed – treating cancer with leading-edge technologies, innovative treatments and expert care personalized to each patient's needs.
+            </p>
+            <p style="color: #666; font-size: 17px; line-height: 1.9;">
+                And we treat patients across the United States through our national footprint of cancer centers. Learn about our cancer centers by exploring the links below.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Cancer Centers Section -->
+    <section id="cancer-types" class="cancer-centers-section">
+        <div class="container">
+            <h2 class="centers-title">Our Cancer Centers</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <a href="locations.html" style="text-decoration: none; color: inherit;">
+                        <div class="center-card">
+                            <div class="center-image">
+                                <img src="images/atlanta-location.jpg" alt="Atlanta Area">
+                            </div>
+                            <div class="center-info">
+                                <h3>Atlanta Area</h3>
+                                <p class="location">Newnan, GA</p>
+                                <p class="center-type">Cancer Center</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <a href="locations.html" style="text-decoration: none; color: inherit;">
+                        <div class="center-card">
+                            <div class="center-image">
+                                <img src="images/chicago-location-new.jpg" alt="Chicago Area">
+                            </div>
+                            <div class="center-info">
+                                <h3>Chicago Area</h3>
+                                <p class="location">Zion, IL</p>
+                                <p class="center-type">Cancer Center</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <a href="locations.html" style="text-decoration: none; color: inherit;">
+                        <div class="center-card">
+                            <div class="center-image">
+                                <img src="images/la-location.jpg" alt="Los Angeles Area">
+                            </div>
+                            <div class="center-info">
+                                <h3>Los Angeles Area</h3>
+                                <p class="location">Duarte, CA</p>
+                                <p class="center-type">NCI-Designated Comprehensive Cancer Center</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <a href="locations.html" style="text-decoration: none; color: inherit;">
+                        <div class="center-card">
+                            <div class="center-image">
+                                <img src="images/oc-location.jpg" alt="Orange County Area">
+                            </div>
+                            <div class="center-info">
+                                <h3>Orange County Area</h3>
+                                <p class="location">Irvine, CA</p>
+                                <p class="center-type">Cancer Center</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6">
+                    <a href="locations.html" style="text-decoration: none; color: inherit;">
+                        <div class="center-card">
+                            <div class="center-image">
+                                <img src="images/temp-phoenix-location.jpg" alt="Phoenix Area">
+                            </div>
+                            <div class="center-info">
+                                <h3>Phoenix Area</h3>
+                                <p class="location">Goodyear, AZ</p>
+                                <p class="center-type">Cancer Center</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NCI Designation Section -->
+    <section class="nci-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="nci-badge-container">
+                        <div class="nci-badge">
+                            <div class="nci-badge-top">NCI</div>
+                            <div class="nci-badge-middle">Designated<br>Comprehensive</div>
+                            <div class="nci-badge-bottom">Cancer Center</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="nci-content">
+                        <h2>NCI's Top Designation for Cancer Centers</h2>
+                        <p>Our National Cancer Center near Los Angeles is a National Cancer Institute (NCI)-Designated Comprehensive Cancer Center. This designation recognizes City of Hope as a national leader in cancer care and an institute dedicated to transforming research into new, innovative treatments for cancer patients across the country and world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="rainbow-border"></div>
+
+    <!-- Patient-Focused Care Section -->
+    <section class="patient-care-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="care-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h2 class="care-title">Patient-Focused Care</h2>
+                <p class="care-description">
+                    Our reputation for groundbreaking discoveries, innovative treatments and compassionate care make us a leader in the fight to help patients here and around the world conquer cancer, diabetes, HIV/AIDS and other life-threatening diseases.
+                </p>
+            </div>
+            
+            <div class="care-image-container">
+                <img src="images/patient_care.jpg" 
+                     alt="Medical Team Consultation" 
+                     class="care-image">
+            </div>
+
+            <div class="row g-4 mt-5 cta-cards-row">
+                <div class="col-lg-4">
+                    <a href="#" class="cta-card-link">
+                        <div class="cta-card">
+                            <span>Cancers and Conditions We Treat</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="cta-card-link">
+                        <div class="cta-card">
+                            <span>Find a Doctor</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="cta-card-link">
+                        <div class="cta-card">
+                            <span>Refer a Patient to City of Hope</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="rainbow-border"></div>
+
+    <!-- Resources Column -->
+<div class="col-lg-2 col-md-6 mb-4">
+    <h5 class="footer-heading">Resources</h5>
+    <ul class="footer-links">
+        <li><a href="#">Newsroom</a></li>
+        <li><a href="#">Stories of Hope</a></li>
+        <li><a href="#">Refer a Patient</a></li>
+        <li><a href="mycityofhope.html"><em>My</em>CityofHope</a></li>  <!-- YE LINE ADD KARO -->
+        <li><a href="#">Medical Records</a></li>
+    </ul>
+</div>
+
+    <!-- Forward-Focused Research Section -->
+    <section class="research-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="research-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h2 class="research-title">Forward-Focused Research</h2>
+                <p class="research-description">
+                    Our infrastructure and collaborative energy sets us apart. By having scientists, treatment staff and manufacturing facilities side-by-side, our treatment advances can travel from laboratory to patient with lifesaving speed.
+                </p>
+            </div>
+            
+            <div class="research-image-container">
+                <img src="images/GMP Lab.jpg" 
+                     alt="Research Laboratory" 
+                     class="research-image">
+            </div>
+
+            <div class="row g-4 mt-5 research-cta-cards-row">
+                <div class="col-lg-4">
+                    <a href="#" class="research-cta-link">
+                        <div class="research-cta-card">
+                            <span>Explore Our Research</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="research-cta-link">
+                        <div class="research-cta-card">
+                            <span>Search Clinical Trials</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="research-cta-link">
+                        <div class="research-cta-card">
+                            <span>Read Latest News</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="rainbow-border"></div>
+
+    <!-- Hope-Inspired Learning Section -->
+    <section class="learning-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="learning-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h2 class="learning-title">Hope-Inspired Learning</h2>
+                <p class="learning-description">
+                    As a leading research institute, our academic programs look beyond the standard treatments of today, providing educational opportunities that explore the latest advancements in research and therapies.
+                </p>
+            </div>
+            
+            <div class="learning-image-container">
+                <img src="images/Beckman-Graduation.jpg" 
+                     alt="Graduation Ceremony" 
+                     class="learning-image">
+            </div>
+
+            <div class="row g-4 mt-5 learning-cta-cards-row">
+                <div class="col-lg-4">
+                    <a href="#" class="learning-cta-link">
+                        <div class="learning-cta-card">
+                            <span>Explore Academics & Training</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="learning-cta-link">
+                        <div class="learning-cta-card">
+                            <span>Irell & Manella Graduate School</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="learning-cta-link">
+                        <div class="learning-cta-card">
+                            <span>Virtual Tours</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Physician Resources Section -->
+    <section class="physician-resources-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="physician-title">Physician Resources</h2>
+                <p class="physician-subtitle">We provide referring physicians easy access to all pertinent information and needed resources.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Find a Doctor -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="physician-card">
+                        <h3 class="physician-card-title">FIND A CITY OF HOPE DOCTOR</h3>
+                        <p class="physician-card-text">City of Hope is home to many of the nation's leading cancer doctors. Find the right one for your patient's needs.</p>
+                        <a href="#" class="btn-physician">Find a Doctor</a>
+                    </div>
+                </div>
+
+                <!-- Find a Location -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="physician-card">
+                        <h3 class="physician-card-title">FIND A CITY OF HOPE LOCATION</h3>
+                        <p class="physician-card-text">Headquartered in Duarte, California, with locations across the United States, our unique approach to care is available in your community.</p>
+                        <a href="locations.html" class="btn-physician">Find a Location</a>
+                    </div>
+                </div>
+
+                <!-- Refer a Patient -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="physician-card">
+                        <h3 class="physician-card-title">HOW TO REFER A PATIENT</h3>
+                        <p class="physician-card-text">We're here to help and welcome the opportunity to partner with you, providing your patients with the latest treatment innovations.</p>
+                        <a href="#" class="btn-physician">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Physician Careers -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="physician-card">
+                        <h3 class="physician-card-title">PHYSICIAN CAREERS</h3>
+                        <p class="physician-card-text">Join a world leader in treating, researching and preventing life-threatening diseases, including cancer, diabetes and HIV/AIDS.</p>
+                        <a href="#" class="btn-physician">Join Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Hope Matters Blog Section -->
+    <section class="hope-matters-section">
+        <div class="container">
+            <div class="blog-header">
+                <h2 class="blog-title">Hope Matters</h2>
+                <a href="#" class="blog-more-link">More blog articles <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="images/LungSurgeryBlogImage.jpg" alt="Lung Nodules">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">Dec 18, 2025 | By City of Hope</div>
+                            <h3 class="blog-card-title">How Doctors Are Making Lung Nodules Glow in the Dark</h3>
+                            <p class="blog-excerpt">Some lung surgeons are using Cytalux to identify cancerous lung nodules, which may glow in the dark using pafolacianine. Learn how it works.</p>
+                            <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="images/PancreaticCancerBackPainBlogImage.jpg" alt="Back Pain">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">Dec 11, 2025 | By City of Hope</div>
+                            <h3 class="blog-card-title">When Back Pain May Be a Sign of Pancreatic Cancer</h3>
+                            <p class="blog-excerpt">Pancreatic cancer back pain locations include the area under the shoulder blades and right behind your belly. Learn where it may occur and why.</p>
+                            <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="images/EatingChallengesBlogImage.jpg" alt="Eating Problems">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">Dec 4, 2025 | By City of Hope</div>
+                            <h3 class="blog-card-title">Overcoming Appetite and Eating Problems With Cancer</h3>
+                            <p class="blog-excerpt">It's hard to determine what to eat when nauseous, if chemo makes food taste bad, if you have mucositis or trouble swallowing. A dietitian shares tips.</p>
+                            <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button class="btn-load-more">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Give Hope Section -->
+    <section class="give-hope-section">
+        <div class="container">
+		
+		
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const toggleBtn = document.getElementById('mobileToggle');     // ☰ button
+  const menu = document.getElementById('navMenu');               // mobile menu
+  const backBtn = document.getElementById('mainMenuHeader');     // back header
+
+  // =========================
+  // 1️⃣ Hamburger Toggle (Mobile ≤ 991px)
+  // =========================
+  if (toggleBtn && menu) {
+    toggleBtn.addEventListener('click', function () {
+
+      if (window.innerWidth > 991) return;
+
+      menu.classList.toggle('active');
+
+      // icon change (bars ↔ cross)
+      const icon = toggleBtn.querySelector('i');
+      if (icon) {
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      }
+
+      // body scroll lock
+      document.body.style.overflow = menu.classList.contains('active')
+        ? 'hidden'
+        : '';
+    });
+  }
+
+  // =========================
+  // 2️⃣ Inner Dropdown Toggle (Mobile ≤ 991px)
+  // =========================
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+
+      if (window.innerWidth > 991) return;
+
+      const parentItem = this.closest('.nav-item');
+      if (!parentItem) return;
+
+      const dropdown = parentItem.querySelector('.dropdown-menu-simple');
+      if (!dropdown) return;
+
+      e.preventDefault();
+
+      dropdown.classList.toggle('active');
+    });
+  });
+
+  // =========================
+  // 3️⃣ Back Button (Main Menu Header)
+  // =========================
+  if (backBtn && toggleBtn && menu) {
+    backBtn.addEventListener('click', function () {
+
+      if (window.innerWidth > 991) return;
+
+      // close menu
+      menu.classList.remove('active');
+
+      // reset icon to bars
+      const icon = toggleBtn.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+
+      // enable body scroll
+      document.body.style.overflow = '';
+    });
+  }
+
+});
+</script>

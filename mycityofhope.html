@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCityofHope | Login</title>
+    <link rel="stylesheet" href="mycityofhope.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <!-- Sticky Notes -->
+    <div class="sticky-notes">
+        <div class="note yellow">
+            <div class="pin"></div>
+            
+        </div>
+        <div class="note pink">
+            <div class="pin"></div>
+        </div>
+        <div class="note orange">
+            <div class="pin"></div>
+        </div>
+        <div class="note blue">
+            <div class="pin"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Left Content Panel -->
+        <div class="left-panel">
+            <h1 class="logo">MyCityofHope</h1>
+            
+            <h2 class="main-heading">
+                Bienvenidos al inicio de sesión de<br>
+                los servicios en línea de<br>
+                <em>My</em>CityofHope Online
+            </h2>
+            
+            <p class="description">
+                Inicie sesión para acceder de forma segura a su información de 
+                salud/historia clínica, ver la mayoría de los resultados de sus 
+                pruebas y análisis de laboratorio, ver sus medicamentos actuales, 
+                alergias y afecciones, y pagar sus facturas.
+            </p>
+            
+            <p class="description">
+                Los servicios en línea de MyCityofHope contienen su información de 
+                salud al alcance de su mano, en cualquier lugar y en cualquier momento.
+            </p>
+            
+            <h3 class="sub-heading">¿Va a iniciar sesión por primera vez?</h3>
+            
+            <p class="description">
+                Registrarse para acceder a los servicios en línea de MyCityofHope es fácil. 
+                Comience con el botón "Sign Up Now".
+            </p>
+            
+            <h3 class="sub-heading">¿Desea obtener más información?</h3>
+            
+            <p class="description">
+                Visite la información adicional que tenemos disponible para usted en:<br>
+                <a href="https://www.cityofhope.org/mycityofhope" class="info-link">https://www.cityofhope.org/mycityofhope</a>
+            </p>
+            
+            <!-- App Store Badges -->
+            <div class="app-badges">
+                <a href="#" class="badge">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                </a>
+                <a href="#" class="badge">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Right Login Panel -->
+        <div class="right-panel">
+            <a href="#" class="lang-toggle">View in English</a>
+            
+            <div class="login-box">
+                <h2 class="login-title">Nombre de usuario de MyChart</h2>
+                
+                <form class="login-form">
+                    <input type="text" class="input-field" placeholder="Nombre de usuario de MyChart">
+                    
+                    <div class="password-wrapper">
+                        <input type="password" id="password" class="input-field" placeholder="Contraseña">
+                        <button type="button" class="eye-toggle" onclick="togglePassword()">
+                            <i class="far fa-eye" id="eyeIcon"></i>
+                        </button>
+                    </div>
+                    
+                    <a href="#" class="forgot-link">¿Olvidó su información de inicio de sesión?</a>
+                    
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fas fa-key"></i>
+                        Iniciar sesión con clave de acceso
+                    </button>
+                    
+                    <button type="button" class="btn btn-secondary">
+                        Regístrese ahora
+                    </button>
+                    
+                    <button type="button" class="btn btn-blue">
+                        Vídeos cortos de ayuda
+                    </button>
+                    
+                    <button type="button" class="btn btn-blue">
+                        Preguntas frecuentes
+                    </button>
+                    
+                    <button type="button" class="btn btn-blue">
+                        Pague facturas del paciente
+                    </button>
+                </form>
+                
+                <div class="support-section">
+                    <p>¿Tiene problemas para iniciar sesión?</p>
+                    <p>Llame a Apoyo Técnico de MyCityofHope</p>
+                    <p class="phone-number">(844) 777-4673</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Guía de interoperabilidad</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Póliza del programa</a>
+            <a href="#">Términos - Tema de contraste alto</a>
+        </div>
+        <p class="copyright">
+            MyChart® licensed from Epic Systems Corporation © 1999 - 2025
+        </p>
+    </footer>
+    
+    <script src="mycityofhope.js"></script>
+</body>
+</html>
